@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  height: 12.5em;
+  width: 25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 5em;
+  width: 5em;
+  background-color: #d5d5d5cb;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  color: #000;
+  font-size: 3.4em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 3.12em;
+  color: #ffffff;
+  display: none;
+}
+input[type="checkbox"]:hover {
+  background-color: #a5a5a5;
+}
+input[type="checkbox"]:checked {
+  background-color: #0083e8;
+}
+input[type="checkbox"]:checked:after {
+  display: block;
+}
